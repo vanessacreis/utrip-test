@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchFromApi } from "../../api/index";
+import { fetchFromApi } from "../../services/index";
 import type { Series, Episode } from "../../types";
 import s from "./style.module.scss";
 import { removeHTMLTags } from "../../utils/removeHTMLTags";

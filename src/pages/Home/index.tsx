@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchFromApi } from "../../api/index";
+import { fetchFromApi } from "../../services/index";
 import type { Series } from "../../types";
 import s from "./style.module.scss";
 import { SerieCard } from "../../components/SerieCard";
