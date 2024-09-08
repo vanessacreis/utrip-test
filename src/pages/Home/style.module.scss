@@ -1,0 +1,32 @@
+.container{
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  .genreContainer h2 {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px; 
+      background-color: #D71F24;
+    }
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 30px;
+    padding: 10px;
+  }
+}

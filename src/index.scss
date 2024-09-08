@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFDFE;
+}
+
+.content {
+  padding-top: 150px; 
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D71F24;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C7161D;
+}
