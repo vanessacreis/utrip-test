@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# TV.APP - UTRIP Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação frontend para listagem de séries dividas por gênero. Ao clicar em uma série, a página de detalhes será aberta, exibindo o nome, o ano, os gêneros que a série se enquadra, além da lista de episódios agrupados por temporadas. O projeto é responsivo e  foi desenvolvido utilizando React + Vite + Typescript + Scss. Rotas de minha lista, favoritos e perfil do usuário não foram implementadas. 
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **`/assets`**: Arquivos estáticos.
+- **`/components`**: Componentes reutilizáveis.
+- **`/pages`**: Páginas da aplicação.
+- **`/services`**: Função para chamadas à API.
+- **`/types`**: Definições de tipos.
+- **`/utils`**: Funções utilitárias para simplificar o código.
 
-## Expanding the ESLint configuration
+## Serviços Criados
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### fetchFromApi
+ Função que realiza chamadas para API `https://www.tvmaze.com/api`. Dos endpoints disponíveis foram utilizados a lista de séries e detalhes de uma série, lista de temporadas e episódios com base no parâmetro `id`.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone o repositório e entre na pasta do projeto:
+   ```bash
+   git clone git@github.com:vanessacreis/utrip-test.git
+   cd utrip-test
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Execute a aplicação:
+   ```bash
+   npm install
+   ``` 
+4. A aplicação abre por padrão na porta 3000. Acesse http://localhost:3000/
